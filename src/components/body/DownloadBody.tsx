@@ -4,6 +4,9 @@ import { fetchLatestYml } from "../../store/downloadSlice";
 import DownloadStateButton from "./DownloadStateButton";
 import "./DownloadBody.scss";
 import { UAParser } from "ua-parser-js";
+import Beta from "@asset/warnbeta.png";
+import ServerDown from "@asset/serverdown.png";
+import Available from "@asset/available.png";
 
 function DownloadBody() {
   const dispatch = useAppDispatch();
@@ -54,7 +57,7 @@ function DownloadBody() {
         <div className="warning-list">
           <div className="warning-item">
             <div className="icon beta">
-              <img src="/assets/01_warnbeta.png" alt="베타 버전 경고" />
+              <img src={Beta} alt="베타 버전 경고" />
             </div>
             <div>
               <strong className="highlight">
@@ -67,7 +70,7 @@ function DownloadBody() {
           </div>
           <div className="warning-item">
             <div className="icon server">
-              <img src="/assets/02_serverdown.png" alt="서버 다운 경고" />
+              <img src={ServerDown} alt="서버 다운 경고" />
             </div>
             <div>
               <strong className="highlight">
@@ -78,7 +81,7 @@ function DownloadBody() {
           </div>
           <div className="warning-item">
             <div className="icon league">
-              <img src="/assets/03_available.png" alt="지원 리그 안내" />
+              <img src={Available} alt="지원 리그 안내" />
             </div>
             <div>
               <strong className="highlight">
