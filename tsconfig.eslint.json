@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.app.json", // 실제 빌드용 설정을 상속
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite-env.d.ts"]
+}

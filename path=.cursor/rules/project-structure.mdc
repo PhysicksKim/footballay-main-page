@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Footballay 프로젝트 가이드
+
+## 주요 구조
+- 진입점: [index.tsx](mdc:src/main.tsx)
+- 루트 컴포넌트: [App.tsx](mdc:src/App.tsx)
+- 전역 스타일: [App.scss](mdc:src/styles/App.scss)
+
+## 컴포넌트 계층
+1. **레이아웃**
+   - 헤더: [Header.tsx](mdc:src/components/layout/Header.tsx)
+   - 반응형 처리: `mobile`/`tablet`/`desktop` 미디어 쿼리 사용
+
+2. **페이지**
+   - 다운로드 페이지: [DownloadPage.tsx](mdc:src/pages/DownloadPage.tsx)
+   - 메인 페이지: [HomePage.tsx](mdc:src/pages/HomePage.tsx)
+
+## 스타일 규칙
+- SCSS 모듈 사용
+- 반응형 브레이크포인트:
+  ```scss
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1024px;
+  ```
+- `rem` 단위 강제 사용 (px 금지)
+
+## 라우팅
+- 구성 파일: [routes.ts](mdc:src/routes.ts)
+- 다운로드 페이지 경로: `/download`
+
+## 외부 의존성
+- 아이콘: `@fortawesome/react-fontawesome`
+- 라우팅: `react-router-dom`

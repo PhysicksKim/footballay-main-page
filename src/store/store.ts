@@ -1,0 +1,13 @@
+import { configureStore } from "@reduxjs/toolkit";
+import downloadReducer from "./downloadSlice";
+import licenseReducer from "./licenseSlice";
+const store = configureStore({
+  reducer: {
+    download: downloadReducer,
+    license: licenseReducer,
+  },
+});
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export default store;
