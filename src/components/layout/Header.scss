@@ -33,8 +33,8 @@
 }
 
 .app-title-link {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .logo-header {
@@ -76,7 +76,7 @@
   background: transparent;
   border-radius: 2px;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   left: 0;
@@ -120,7 +120,7 @@
   background: #5865f2;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .main-header {
     padding: 0 0.3rem;
   }
@@ -148,12 +148,11 @@
   }
 
   .features-body {
-    width: auto !important;
     margin-top: 1rem;
+    width: auto !important;
   }
 }
-
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .main-header {
     padding: 0 1rem;
   }
@@ -167,7 +166,7 @@
   }
 
   .features {
-    width: 100% !important;
     padding: 2rem 1rem !important;
+    width: 100% !important;
   }
 }

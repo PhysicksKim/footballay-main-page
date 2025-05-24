@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import downloadReducer from "./downloadSlice";
-import licenseReducer from "./licenseSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import downloadReducer from './downloadSlice';
+import licenseReducer from './licenseSlice';
 
 export const store = configureStore({
   reducer: {

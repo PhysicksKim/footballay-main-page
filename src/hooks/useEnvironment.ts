@@ -1,8 +1,9 @@
-import { useMemo } from "react";
+/* eslint-disable no-undef */
+import { useMemo } from 'react';
 
 export const useEnvironment = () => {
   const isDevelopment = useMemo(() => {
-    return process.env.NODE_ENV === "development";
+    return process.env.NODE_ENV === 'development';
   }, []);
 
   return {

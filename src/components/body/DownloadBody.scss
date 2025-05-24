@@ -109,7 +109,7 @@
   color: #fff;
 
   h2 {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 0.7em;
@@ -122,14 +122,14 @@
   }
 
   .sub-title {
-    color: #ffd700;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 2.5rem;
     border-bottom: 1px solid #a8a8a828;
+    color: #ffd700;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5rem;
 
     &::before {
-      content: "•";
+      content: '•';
       margin-right: 0.5em;
     }
   }
