@@ -39,7 +39,7 @@ function DownloadBody() {
 
   return (
     <main className="download-page">
-      <h1>다운로드 안내</h1>
+      <h1 className="download-title">다운로드 안내</h1>
       <div
         className="download-license"
         style={{

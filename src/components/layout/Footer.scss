@@ -90,6 +90,14 @@
   display: inline-flex;
   font-size: 12px;
   line-height: 1;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+  }
 }
 
 .footer-contact-row * {
@@ -145,6 +153,10 @@
 .footer-sep {
   color: #8ea1e1;
   margin: 0 8px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .footer-github-link {

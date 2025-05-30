@@ -41,29 +41,33 @@ function Footer() {
       </div>
       <div className="footer-contact">
         <span className="footer-contact-row">
-          문의: <span className="footer-email">{email}</span>
-          <button
-            className="footer-copy-btn"
-            onClick={handleCopy}
-            onMouseDown={(e) => e.preventDefault()}
-            aria-label="이메일 복사"
-            tabIndex={0}
-          >
-            <FontAwesomeIcon icon={faCopy} style={{ fontSize: '1em' }} />
-          </button>
-          <span className="footer-copy-toast" style={{ opacity: copied ? 1 : 0 }}>
-            복사됨!
-          </span>
-          <span className="footer-sep">|</span>
-          GitHub:{' '}
-          <a
-            href="https://github.com/PhysicksKim"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-github-link"
-          >
-            PhysicksKim <FontAwesomeIcon icon={faUpRightFromSquare} style={{ fontSize: '1em' }} />
-          </a>
+          <div className="footer-contact-item">
+            문의: <span className="footer-email">{email}</span>
+            <button
+              className="footer-copy-btn"
+              onClick={handleCopy}
+              onMouseDown={(e) => e.preventDefault()}
+              aria-label="이메일 복사"
+              tabIndex={0}
+            >
+              <FontAwesomeIcon icon={faCopy} style={{ fontSize: '1em' }} />
+            </button>
+            <span className="footer-copy-toast" style={{ opacity: copied ? 1 : 0 }}>
+              복사됨!
+            </span>
+          </div>
+          <div className="footer-contact-item">
+            <span className="footer-sep">|</span>
+            GitHub:{' '}
+            <a
+              href="https://github.com/PhysicksKim"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-github-link"
+            >
+              PhysicksKim <FontAwesomeIcon icon={faUpRightFromSquare} style={{ fontSize: '1em' }} />
+            </a>
+          </div>
         </span>
       </div>
     </footer>

@@ -4,9 +4,12 @@ html {
 }
 
 :root {
-  --scrollbar-width: 15px;
+  --scrollbar-track-width: 10px;
+  --bg-color: #0c1736;
+  --scrollbar-track-color: #0a0c0f;
+  --scrollbar-thumb-color: #3c4766;
 
-  background-color: #0c1736;
+  background-color: var(--bg-color);
   color: rgb(255 255 255 / 87%);
 
   /* Color scheme (light/dark) */
@@ -37,9 +40,23 @@ body {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  width: var(--scrollbar-track-width);
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: calc(var(--scrollbar-track-width) / 2);
+}
+
 #root {
-  min-width: calc(100vw - var(--scrollbar-width));
-  width: calc(100vw - var(--scrollbar-width));
+  // min-width: calc(100vw - var(--scrollbar-track-width));
+  // width: calc(100vw - var(--scrollbar-track-width));
+  min-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
